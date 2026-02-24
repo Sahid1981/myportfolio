@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/06e4f2b1fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -45,13 +46,84 @@
                 -Continuous learning and self‑development</P>
 
                 <div class="tab-titles">
-                    <p class="tab-link">Skills</p>
-                    <p class="tab-link">Experience</p>
-                    <p class="tab-link">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming languages:</span> Python, Java, C#, JavaScript</li>
+                        <li><span>Web development:</span> HTML, CSS, React</li>
+                        <li><span>Database management:</span> SQL, MongoDB</li>
+                        <li><span>Version control:</span> Git</li>
+                        <li><span>Problem-solving and algorithmic thinking:</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Programming languages:</span> Python, Java, C#, JavaScript</li>
+                        <li><span>Web development:</span> HTML, CSS, React</li>
+                        <li><span>Database management:</span> SQL, MongoDB</li>
+                        <li><span>Version control:</span> Git</li>
+                        <li><span>Problem-solving and algorithmic thinking:</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>ICT Engineering:</span> Oulu University of Applied Sciences</li>
+                        <li><span>Software Development:</span> Oamk</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-----projects------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="services-col-1">
+                <img src="images/project1.png">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Reaction game</h2>
+                <p>Description of project 1.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="services-col-2">
+                <img src="images/project2.png">
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Project 2</h2>
+                <p>Description of project 2.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="services-col-3">
+                <img src="images/project3.png">
+                <h2>Project 3</h2>
+                <p>Description of project 3.</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
 </body>
 </html> 
