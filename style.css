@@ -22,17 +22,25 @@ body{
     background-image: url();
     background-size: cover;
     background-position: center;
+    padding-top: 6rem; /* 160px */
 }
 
 .container{
     padding: 0.625rem 10%;
 }
 
-nav{
-    display: flex;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* pitää navin kaiken muun päällä */
+    background: #080808; /* lisää tausta, ettei teksti mene kuvien päälle */
+    padding: 0.625rem 10%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: flex;
 }
 
 .logo{
@@ -85,6 +93,7 @@ nav ul li a:hover::after{
 #about{
     padding: 5rem 0; /* 80px 0 */
     color: #ababab;
+    scroll-margin-top: 6rem;
 }
 
 .row{
@@ -179,6 +188,7 @@ nav ul li a:hover::after{
 /*----------------expertise---------*/
 #expertise{
     padding: 1.875rem 0; /* 30px 0 */
+    scroll-margin-top: 6rem;
 }
 
 .expertise-list{
@@ -224,6 +234,7 @@ nav ul li a:hover::after{
 /*----------------projects---------*/
 #projects{
     padding: 1.875rem 0; /* 30px 0 */
+    scroll-margin-top: 6rem;
 }
 .projects-list{
     display: grid;
@@ -314,6 +325,7 @@ nav ul li a:hover::after{
 /*----------------contact---------*/
 #contact{
     padding: 1.875rem 0; /* 30px 0 */
+    scroll-margin-top: 6rem;
 }
 .contact-left{
     flex-basis: 35%;
