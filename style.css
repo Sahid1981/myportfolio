@@ -177,18 +177,18 @@ nav ul li a:hover::after{
 }
 
 /*----------------expertise---------*/
-#Expertise{
+#expertise{
     padding: 1.875rem 0; /* 30px 0 */
 }
 
-.Expertise-list{
+.expertise-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
     grid-gap: 2.5rem; /* 40px */
     margin-top: 3.125rem; /* 50px */
 }
 
-.Expertise-list div{
+.expertise-list div{
     background: #262626;
     padding : 2.5rem; /* 40px */
     font-size: 0.8125rem; /* 13px */
@@ -197,18 +197,18 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-.Expertise-list div i{
+.expertise-list div i{
     font-size: 3.125rem; /* 50px */
     margin-bottom: 1.875rem; /* 30px */
 }
 
-.Expertise-list div h2{
+.expertise-list div h2{
     font-size: 1.875rem; /* 30px */
     margin-bottom: 0.9375rem; /* 15px */
     font-weight: 500;
 }
 
-.Expertise-list div a{
+.expertise-list div a{
     color: #fff;
     text-decoration: none;
     font-size: 0.7813rem; /* 12.5px */
@@ -216,7 +216,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.Expertise-list div:hover{
+.expertise-list div:hover{
     background: #ff004f;
     transform: translateY(-0.625rem); /* -10px */
 }
@@ -456,3 +456,4 @@ nav .fa-solid{
     display: block;
 
 }
+
