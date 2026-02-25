@@ -490,6 +490,24 @@ nav .fa-solid{
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
+    
+    .project img {
+        height: 40rem; /* esim. 288px */
+    }
+
+    /* Näytä overlay suurempana ja vieritettävänä */
+    .layer {
+        height: 75vh;          /* iso, mutta ei koko näyttöä */
+        overflow-y: auto;      /* teksti mahtuu vierittämällä */
+        padding: 1rem 1rem;    /* hieman tiiviimpi padding */
+        font-size: 0.95rem;    /* pykälää pienempi fontti mobiiliin */
+    }
+
+    /* Varmista, että hoverista riippumatta overlay pysyy isona */
+    .project:hover .layer {
+        height: 75vh;
+    }
+
     .about-col-1{
         margin-bottom: 1.9375rem; /* 30px */
     }
