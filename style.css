@@ -75,6 +75,44 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+/* Google Translate Widget */
+#google_translate_element {
+    margin-top: 0.625rem;
+}
+
+#google_translate_element select {
+    background: #262626;
+    color: #fff;
+    border: 0.125rem solid #ff004f;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#google_translate_element select:hover {
+    background: #ff004f;
+}
+
+/* Hide Google Translate branding */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+    font-size: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    color: #fff !important;
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 1.875rem; /* 30px */
@@ -479,6 +517,18 @@ nav .fa-solid{
         display: block;
         margin: 1.5875rem; /* 25px */
     }
+    
+    /* Google Translate mobiilissa */
+    #google_translate_element {
+        margin: 0.625rem 1.5875rem;
+    }
+    
+    #google_translate_element select {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        width: 100%;
+    }
+    
     nav ul .fa-solid{
         position: absolute;
         top: 1.5875rem; /* 25px */

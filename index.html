@@ -19,14 +19,16 @@
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" onclick="toggleTranslate(); return false;">Mummolle</a></li>
+                <li><div id="google_translate_element" style="display:none;"></div></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
         
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p data-i18n="header_role">ICT Student</p>
-            <h1 data-i18n="header_main">Hi, I'm <span>Juha</span><br>Welcome to My Portfolio</h1>
+            <p>ICT Student</p>
+            <h1>Hi, I'm <span>Juha</span><br>Welcome to My Portfolio</h1>
         </div>
     </div>
 </div>
@@ -38,8 +40,8 @@
                 <img src="images/juha.png">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title" data-i18n="about_title">About Me</h1>
-                    <p data-i18n="about-intro" class="about-intro">
+                <h1 class="sub-title">About Me</h1>
+                    <pclass="about-intro">
                     Hi! I’m Juha Jermalainen, a second‑year ICT engineering student at Oamk specializing
                     in software development. After 20 years in restaurant‑industry customer service, 
                     I’m transitioning into tech with strong communication skills, problem‑solving ability,
@@ -306,6 +308,26 @@
 	})
 </script>
 
+<script type="text/javascript">
+function toggleTranslate() {
+  const translateElement = document.getElementById('google_translate_element');
+  if (translateElement.style.display === 'none') {
+    translateElement.style.display = 'block';
+  } else {
+    translateElement.style.display = 'none';
+  }
+}
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,fi',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html> 
