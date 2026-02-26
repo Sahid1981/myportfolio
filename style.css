@@ -498,15 +498,45 @@ nav .fa-solid{
 
     /* Näytä overlay suurempana ja vieritettävänä */
     .layer {
-        height: 75vh;          /* iso, mutta ei koko näyttöä */
-        overflow-y: auto;      /* teksti mahtuu vierittämällä */
-        padding: 1rem 1rem;    /* hieman tiiviimpi padding */
-        font-size: 0.95rem;    /* pykälää pienempi fontti mobiiliin */
+        height: 0;             /* piilossa aluksi */
+        overflow: hidden;      /* piilotetaan kaikki ylimenevä */
+        padding: 0;            /* ei paddingia kun piilossa */
+        font-size: 0.85rem;    /* pienemmät fontit mobiiliin */
+    }
+
+    .layer h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .layer h4 {
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .layer p {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+    }
+
+    .role-list,
+    .features-list {
+        padding-left: 0.8rem;
+        margin: 0.3rem 0;
+    }
+
+    .role-list li,
+    .features-list li {
+        margin-bottom: 0.2rem;
+        font-size: 0.8rem;
     }
 
     /* Varmista, että hoverista riippumatta overlay pysyy isona */
     .project:hover .layer {
         height: 75vh;
+        overflow-y: auto;
+        padding: 0.8rem 0.8rem;
     }
 
     .about-col-1{
