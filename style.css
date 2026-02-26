@@ -22,17 +22,25 @@ body{
     background-image: url();
     background-size: cover;
     background-position: center;
+    padding-top: 6rem; /* 160px */
 }
 
 .container{
     padding: 0.625rem 10%;
 }
 
-nav{
-    display: flex;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* pitää navin kaiken muun päällä */
+    background: #080808; /* lisää tausta, ettei teksti mene kuvien päälle */
+    padding: 0.625rem 10%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: flex;
 }
 
 .logo{
@@ -85,6 +93,7 @@ nav ul li a:hover::after{
 #about{
     padding: 5rem 0; /* 80px 0 */
     color: #ababab;
+    scroll-margin-top: 6rem;
 }
 
 .row{
@@ -177,18 +186,19 @@ nav ul li a:hover::after{
 }
 
 /*----------------expertise---------*/
-#Expertise{
+#expertise{
     padding: 1.875rem 0; /* 30px 0 */
+    scroll-margin-top: 6rem;
 }
 
-.Expertise-list{
+.expertise-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
     grid-gap: 2.5rem; /* 40px */
     margin-top: 3.125rem; /* 50px */
 }
 
-.Expertise-list div{
+.expertise-list div{
     background: #262626;
     padding : 2.5rem; /* 40px */
     font-size: 0.8125rem; /* 13px */
@@ -197,18 +207,18 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-.Expertise-list div i{
+.expertise-list div i{
     font-size: 3.125rem; /* 50px */
     margin-bottom: 1.875rem; /* 30px */
 }
 
-.Expertise-list div h2{
+.expertise-list div h2{
     font-size: 1.875rem; /* 30px */
     margin-bottom: 0.9375rem; /* 15px */
     font-weight: 500;
 }
 
-.Expertise-list div a{
+.expertise-list div a{
     color: #fff;
     text-decoration: none;
     font-size: 0.7813rem; /* 12.5px */
@@ -216,7 +226,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.Expertise-list div:hover{
+.expertise-list div:hover{
     background: #ff004f;
     transform: translateY(-0.625rem); /* -10px */
 }
@@ -224,6 +234,7 @@ nav ul li a:hover::after{
 /*----------------projects---------*/
 #projects{
     padding: 1.875rem 0; /* 30px 0 */
+    scroll-margin-top: 6rem;
 }
 .projects-list{
     display: grid;
@@ -270,6 +281,52 @@ nav ul li a:hover::after{
    transition: height 0.5s;
 }
 
+
+.role-list,
+.features-list {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 500px;
+  padding-left: 1rem;
+  line-height: 1;
+}
+
+.role-list li,
+.features-list li {
+  margin-bottom: 4px;
+}
+
+
+.layer .actions {
+  display: flex;
+  flex-direction: row;      /* vaakarivi */
+  justify-content: center;  /* keskitys */
+  align-items: center;
+  gap: 15px;                /* väli kuvakkeiden väliin */
+  margin-top: 13px;
+}
+
+
+.layer .actions a {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: purple;
+  text-decoration: none;
+  box-shadow: -4px 9px 13px #561ec887;
+  transition: color .2s ease;
+}
+
+.layer .actions a:hover {
+  color: #000;
+}
+
+
 .layer h3{
     font-weight: 500;
     margin-bottom: 1.25rem; /* 20px */
@@ -314,6 +371,7 @@ nav ul li a:hover::after{
 /*----------------contact---------*/
 #contact{
     padding: 1.875rem 0; /* 30px 0 */
+    scroll-margin-top: 6rem;
 }
 .contact-left{
     flex-basis: 35%;
@@ -432,6 +490,24 @@ nav .fa-solid{
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
+    
+    .project img {
+        height: 40rem; /* esim. 288px */
+    }
+
+    /* Näytä overlay suurempana ja vieritettävänä */
+    .layer {
+        height: 75vh;          /* iso, mutta ei koko näyttöä */
+        overflow-y: auto;      /* teksti mahtuu vierittämällä */
+        padding: 1rem 1rem;    /* hieman tiiviimpi padding */
+        font-size: 0.95rem;    /* pykälää pienempi fontti mobiiliin */
+    }
+
+    /* Varmista, että hoverista riippumatta overlay pysyy isona */
+    .project:hover .layer {
+        height: 75vh;
+    }
+
     .about-col-1{
         margin-bottom: 1.9375rem; /* 30px */
     }
@@ -454,4 +530,6 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -2.5rem; /* -40px */
     display: block;
+
 }
+
