@@ -502,7 +502,7 @@ nav .fa-solid{
         overflow: hidden;      /* piilotetaan kaikki ylimenevä */
         padding: 0;            /* ei paddingia kun piilossa */
         font-size: 0.85rem;    /* pienemmät fontit mobiiliin */
-        transition: height 0.5s;
+       
     }
 
     .layer h3 {
