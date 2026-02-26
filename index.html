@@ -25,8 +25,8 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>ICT Student</p>
-            <h1>Hi, I'm <span>Juha</span><br>Welcome to My Portfolio</h1>
+            <p data-i18n="header_role">ICT Student</p>
+            <h1 data-i18n="header_main">Hi, I'm <span>Juha</span><br>Welcome to My Portfolio</h1>
         </div>
     </div>
 </div>
@@ -38,17 +38,31 @@
                 <img src="images/juha.png">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <P class="about-intro">Hi! I’m Juha Jermalainen, a second-year Information and Communications Technology engineering student at Oamk, specializing in software development. I am currently transitioning into the tech industry after 20 years of experience in customer service within the restaurant field, bringing with me strong communication skills, resilience under pressure, and a natural ability to work with people.
-                I’m passionate about software development, modern technologies, and home automation. I enjoy solving problems, building efficient solutions, and seeing ideas come to life through code. Through my studies and personal projects, I’ve gained experience in programming, application development, and exploring how technology can improve everyday life.
-                As a father, I value balance between family life, learning, and future career growth. My goal is to build a career in software development where I can combine customer-oriented thinking, technical skills, and a continuous desire to improve.
-                Interests</P>
-                <ul class="about-list"></ul>
+                <h1 class="sub-title" data-i18n="about_title">About Me</h1>
+                    <p data-i18n="about-intro" class="about-intro">
+                    Hi! I’m Juha Jermalainen, a second‑year ICT engineering student at Oamk specializing
+                    in software development. After 20 years in restaurant‑industry customer service, 
+                    I’m transitioning into tech with strong communication skills, problem‑solving ability,
+                    and experience working under pressure.
+                    <br><br>
+                    I'm passionate about software development, modern technologies, and smart home
+                    automation. I enjoy building practical, efficient solutions and exploring how
+                    technology can improve everyday life. Through studies and personal projects,
+                    I’ve gained hands‑on experience in programming, application development, and
+                    software design.
+                    <br><br>
+                    My goal is to build a career in software development where I can combine 
+                    customer‑focused thinking with technical skills and continuous improvement.
+                    </p>
+
+                    <h3>Interests</h3>
+                    <br>
+                    <ul class="about-list">
                     <li>Software development & modern technologies</li>
                     <li>Smart home & automation systems</li>
                     <li>System optimization & usability</li>
-                    <li>Continuous learning and self‑development</li>
-                </ul>
+                    <li>Continuous learning & self‑development</li>
+                    </ul>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -57,26 +71,26 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming languages:</span> Python, Java, C#, JavaScript</li>
-                        <li><span>Web development:</span> HTML, CSS, React</li>
-                        <li><span>Database management:</span> SQL, MongoDB</li>
-                        <li><span>Version control:</span> Git</li>
-                        <li><span>Problem-solving and algorithmic thinking:</span></li>
+                        <li><span>Programming languages:</span> c++, JavaScript, python, C/arduino, Bash, Arduinoc/c++
+                        <li><span>Web & APIs:</span> REST API (Express), JWT‑auth, JSON, nginx, Dockerized LEMP‑stack</li>
+                        <li><span>Database management:</span> MySQL: schema, CRUD, stored procedures, transactions, container‑DB integration</li>
+                        <li><span>DevOps & Git:</span> GitHub Actions (CI/CD), Dockerfiles, automated deployment, collaborative Git‑workflow</li>
+                        <li><span>Problem-solving:</span>Authentication & state management (PIN, JWT, timeouts), financial logic (limits, withdrawals), data pagination, embedded IO & EEPROM handling.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Programming languages:</span> Python, Java, C#, JavaScript</li>
-                        <li><span>Web development:</span> HTML, CSS, React</li>
-                        <li><span>Database management:</span> SQL, MongoDB</li>
-                        <li><span>Version control:</span> Git</li>
-                        <li><span>Problem-solving and algorithmic thinking:</span></li>
+                        <li><span>Software developer: </span> ATM System Project (OAMK)</li>
+                        <li><span>Empbedded systems developer:</span> SpedenSpelit V2 (OAMK)</li>
+                        <li><span>Customer Service Professional:</span> Restaurant Industry (over 20 years)</li>
+                        <li><span>Restaurant owner:</span> Rytmikellari</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>ICT Engineering:</span> Oulu University of Applied Sciences</li>
-                        <li><span>Software Development:</span> Oamk</li>
+                        <li><span>Bachelor of Engineering, Information & Communication Technology (Software Development):</span> OAMK 2025-ongoing</li>
+                        <li><span>Bachelor of Hospitality Management (BBA):</span> Savonia 2006-2010</li>
+                        <li><span>Matriculation Examination:</span> Graduated 2000</li>
                     </ul>
                 </div>
             </div>
@@ -91,23 +105,23 @@
         <div class="expertise-list">
             <div class="expertise">
                 
-                <i class="fa-solid fa-gamepad"></i>
-                <h2>Reaction game</h2>
-                <p>Description of project 1kflseamfmkwerlötfwm,wmrgölwrm weftwelkfgnn gweelkörjm weöf lmfkw fmwöf </p>
-                <a href="#">View Details</a>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h2>Customer‑Focused Problem Solving</h2>
+                <p>20 years of customer service experience have built strong skills in resolving issues quickly, calmly, and with the end‑user’s needs in mind. </p>
+                
             </div>
             <div class="services-col-2">
                 
                 <i class="fa-solid fa-laptop"></i>
-                <h2>ATM project</h2>
-                <p>Description of project dflqm,flqefmlflflö qlef,l q,mföla alöfaef löaf adlöfm,aölf a flöadm öaldfmad </p>
-                <a href="#">View Details</a>
+                <h2>Technical Curiosity & Rapid Learning</h2>
+                <p>I naturally explore new technologies and tools, quickly getting up to speed and applying what I learn to build clean, practical solutions.</p>
+                
             </div>
             <div class="services-col-3">
-                <i class="fa-solid fa-robot"></i>
-                <h2>Project 3</h2>
-                <p>Description of project 3 aslfkmlamfg asölf möalfma asölfma flam adlö adlögg dgladg mdglködag mdgölmg ölad </p>
-                <a href="#">View Details</a>
+                <i class="fa-solid fa-bolt"></i>
+                <h2>Professional Drive & Independent Work Ethic</h2>
+                <p>Balancing a career transition, engineering studies, and family responsibilities has strengthened my ability to work independently, stay organized, and consistently deliver results with a high level of commitment. </p>
+                
             </div>
         </div>
     </div>
