@@ -7,7 +7,7 @@
 
 
 html {
-    font-size: 16px; 
+    font-size: 1rem; 
     scroll-behavior: smooth;
 }
 
@@ -245,7 +245,7 @@ nav ul li a:hover::after{
 }
 
 .project{
-    border-radius: 10px;
+    border-radius: 0.625rem;
     position: relative;
     overflow: hidden;
 }
@@ -287,14 +287,14 @@ nav ul li a:hover::after{
 .features-list {
   text-align: left;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 31.25rem;
   padding-left: 1rem;
   line-height: 1;
 }
 
 .role-list li,
 .features-list li {
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 
@@ -303,14 +303,14 @@ nav ul li a:hover::after{
   flex-direction: row;      /* vaakarivi */
   justify-content: center;  /* keskitys */
   align-items: center;
-  gap: 15px;                /* väli kuvakkeiden väliin */
-  margin-top: 13px;
+  gap: 0.9375rem;                /* väli kuvakkeiden väliin */
+  margin-top: 0.8125rem;
 }
 
 
 .layer .actions a {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   background: #fff;
   border-radius: 50%;
   display: flex;
@@ -319,7 +319,7 @@ nav ul li a:hover::after{
   font-size: 1.3rem;
   color: purple;
   text-decoration: none;
-  box-shadow: -4px 9px 13px #561ec887;
+  box-shadow: -0.25rem 0.5625rem 0.8125rem #561ec887;
   transition: color .2s ease;
 }
 
@@ -334,11 +334,11 @@ nav ul li a:hover::after{
 }
 
 .layer a{
-    margin-top: 20px;
+    margin-top: 1.25rem;
     color: #ff004f;
     text-decoration: none;
     font-size: 1.125rem; /* 18px */
-    line-height: 60px;
+    line-height: 3.75rem;
     background: #fff;
     width: 3.75rem; /* 60px */
     height: 3.75rem; /* 60px */
@@ -449,7 +449,7 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 37.5rem){
     #header{
         background-image: url();
     }
