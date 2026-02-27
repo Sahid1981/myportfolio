@@ -22,7 +22,7 @@ body{
     background-image: url();
     background-size: cover;
     background-position: center;
-    padding-top: 6rem; /* 160px */
+    padding-top: 6rem;
 }
 
 .container{
@@ -34,8 +34,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;  /* pitää navin kaiken muun päällä */
-    background: #080808; /* lisää tausta, ettei teksti mene kuvien päälle */
+    z-index: 1000;  
+    background: #080808; 
     padding: 0.625rem 10%;
     align-items: center;
     justify-content: space-between;
@@ -44,30 +44,30 @@ nav {
 }
 
 .logo{
-    width: 8.75rem; /* 140px */
+    width: 8.75rem;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 0.625rem 1.25rem; /* 10px 20px */
+    margin: 0.625rem 1.25rem;
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
     position: relative;
 }
 
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 0.1875rem; /* 3px */
+    height: 0.1875rem;
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -0.5rem; /* -8px (valittu arvo; aiempi -6px poistettu) */
+    bottom: -0.5rem;
     transition: 0.5s;
 }
 
@@ -115,21 +115,24 @@ body {
 
 .header-text{
     margin-top: 20%;
-    font-size: 1.875rem; /* 30px */
+    font-size: 1.875rem;
 }
 
 .header-text h1{
-    font-size: 3.75rem; /* 60px */
-    margin-bottom: 1.25rem; /* 20px */
+    font-size: 3.75rem;
+    margin-bottom: 1.25rem;
 }
 
 .header-text h1 span{
     color:#ff004f;
 }
 
-/*---about section---*/
+/*-------------------------------*/
+/*-------about section-----------*/
+/*-------------------------------*/
+
 #about{
-    padding: 5rem 0; /* 80px 0 */
+    padding: 5rem 0;
     color: #ababab;
     scroll-margin-top: 6rem;
 }
@@ -146,7 +149,7 @@ body {
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 0.9375rem; /* 15px */
+    border-radius: 0.9375rem;
 }
 
 .about-col-2{
@@ -155,7 +158,7 @@ body {
 
 .sub-title{
     color: #fff;
-    font-size: 3.75rem; /* 60px */
+    font-size: 3.75rem;
     font-weight: 600;
 }
 
@@ -179,12 +182,12 @@ body {
 
 .tab-titles{
     display: flex;
-    margin: 1.25rem 2.5rem; /* 20px 40px (korjattu: 'o' -> '0') */
+    margin: 1.25rem 2.5rem;
 }
 
 .tab-links{
-    margin-right: 3.125rem; /* 50px */
-    font-size: 1.125rem; /* 18px */
+    margin-right: 3.125rem; 
+    font-size: 1.125rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -193,11 +196,11 @@ body {
 .tab-links::after{
     content: '';
     width: 0;
-    height: 0.1875rem; /* 3px */
+    height: 0.1875rem;
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -0.5rem; /* -8px (yhtenäistetty) */
+    bottom: -0.5rem;
     transition: 0.5s;
 }
 
@@ -207,12 +210,12 @@ body {
 
 .tab-contents ul li{
     list-style: none;
-    margin: 0.625rem 0; /* 10px 0 */
+    margin: 0.625rem 0;
 }
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
 }
 
 .tab-contents{
@@ -223,63 +226,69 @@ body {
     display: block;
 }
 
-/*----------------expertise---------*/
+/*-------------------------------*/
+/*-------------expertise---------*/
+/*-------------------------------*/
+
 #expertise{
-    padding: 1.875rem 0; /* 30px 0 */
+    padding: 1.875rem 0;
     scroll-margin-top: 6rem;
 }
 
 .expertise-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
-    grid-gap: 2.5rem; /* 40px */
-    margin-top: 3.125rem; /* 50px */
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    grid-gap: 2.5rem; 
+    margin-top: 3.125rem;
 }
 
 .expertise-list div{
     background: #262626;
-    padding : 2.5rem; /* 40px */
-    font-size: 0.8125rem; /* 13px */
+    padding : 2.5rem; 
+    font-size: 0.8125rem;
     font-weight: 300;
-    border-radius: 0.625rem;/* 10px */
+    border-radius: 0.625rem;
     transition: background 0.5s, transform 0.5s, font-size 0.5sf;
 }
 
 .expertise-list div i{
-    font-size: 3.125rem; /* 50px */
-    margin-bottom: 1.875rem; /* 30px */
+    font-size: 3.125rem;
+    margin-bottom: 1.875rem;
 }
 
 .expertise-list div h2{
-    font-size: 1.875rem; /* 30px */
-    margin-bottom: 0.9375rem; /* 15px */
+    font-size: 1.875rem;
+    margin-bottom: 0.9375rem; 
     font-weight: 500;
 }
 
 .expertise-list div a{
     color: #fff;
     text-decoration: none;
-    font-size: 0.7813rem; /* 12.5px */
-    margin-top: 1.25rem; /* 20px */
+    font-size: 0.7813rem; 
+    margin-top: 1.25rem; 
     display: inline-block;
 }
 
 .expertise-list div:hover{
     background: #ff004f;
-    transform: translateY(-0.625rem); /* -10px */
-    font-size: 1.000rem; /* 16px */
+    transform: translateY(-0.625rem); 
+    font-size: 1.000rem; 
 }
 
-/*----------------projects---------*/
+/*-------------------------------*/
+/*--------------projects---------*/
+/*-------------------------------*/
+
 #projects{
-    padding: 1.875rem 0; /* 30px 0 */
+    padding: 1.875rem 0;
     scroll-margin-top: 6rem;
 }
 .projects-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
-    grid-gap: 2.5rem; /* 40px */
-    margin-top: 3.125rem; /* 50px */
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 3.125rem; 
 }
 
 .project{
@@ -289,15 +298,15 @@ body {
 }
 .project img{
     width: 100%;
-    height: 35rem; /* 560px */
+    height: 35rem; 
     object-fit: cover;
-    border-radius: 0.625rem; /* 10px */
+    border-radius: 0.625rem; 
     display: block;
     background: #262626;
-    padding : 2.5rem; /* 40px */
-    font-size: 0.8125rem; /* 13px */
+    padding : 2.5rem; 
+    font-size: 0.8125rem; 
     font-weight: 300;
-    border-radius: 0.625rem;/* 10px */
+    border-radius: 0.625rem;
     transition: transform 0.5s;
 }
 
@@ -305,7 +314,7 @@ body {
    width: 100%;
    height: 0;
    background: linear-gradient(rgba(0,0,0,0.6), #ff004f); 
-   border-radius: 0.625rem; /* 10px */
+   border-radius: 0.625rem; 
    position: absolute;
    left: 0;
    bottom: 0;
@@ -314,9 +323,9 @@ body {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   padding: 0 2.5rem; /* 0 40px */
+   padding: 0 2.5rem; 
    text-align: center;
-   font-size: 0.875rem; /* 14px */
+   font-size: 0.875rem; 
    transition: height 0.5s;
 }
 
@@ -338,10 +347,10 @@ body {
 
 .layer .actions {
   display: flex;
-  flex-direction: row;      /* vaakarivi */
-  justify-content: center;  /* keskitys */
+  flex-direction: row;      
+  justify-content: center;  
   align-items: center;
-  gap: 0.9375rem;                /* väli kuvakkeiden väliin */
+  gap: 0.9375rem;
   margin-top: 0.8125rem;
 }
 
@@ -368,18 +377,18 @@ body {
 
 .layer h3{
     font-weight: 500;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; 
 }
 
 .layer a{
     margin-top: 1.25rem;
     color: #ff004f;
     text-decoration: none;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
     line-height: 3.75rem;
     background: #fff;
-    width: 3.75rem; /* 60px */
-    height: 3.75rem; /* 60px */
+    width: 3.75rem; 
+    height: 3.75rem; 
     border-radius: 50%;
     text-align: center;
 }
@@ -388,16 +397,16 @@ body {
     transform: scale(1.1);
 }
 .project:hover .layer{
-    height: 35rem; /* 560px */
+    height: 35rem; 
 }
 
 .btn{
     display: block;
-    margin: 3.125rem auto; /* 50px auto */
+    margin: 3.125rem auto; 
     width: fit-content;
-    padding: 0.875rem 3.125rem; /* 14px 50px */
-    border: 0.0625rem solid #ff004f; /* 1px */
-    border-radius: 0.375rem; /* 6px */
+    padding: 0.875rem 3.125rem; 
+    border: 0.0625rem solid #ff004f; 
+    border-radius: 0.375rem; 
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
@@ -407,9 +416,12 @@ body {
     background: #ff004f;
 }
 
-/*----------------contact---------*/
+/*-------------------------------*/
+/*---------------contact---------*/
+/*-------------------------------*/
+
 #contact{
-    padding: 1.875rem 0; /* 30px 0 */
+    padding: 1.875rem 0;
     scroll-margin-top: 6rem;
 }
 .contact-left{
@@ -419,23 +431,23 @@ body {
     flex-basis: 60%;
 }
 .contact-left p{
-    margin-top: 1.875rem; /* 30px */
+    margin-top: 1.875rem; 
 }
 
 .contact-left p i{
     color: #ff004f;
-    margin-right: 0.9375rem; /* 15px */
-    font-size: 1.5875rem; /* 25px */
+    margin-right: 0.9375rem; 
+    font-size: 1.5875rem; 
 }
 
 .social-links{
-    margin-top: 1.875rem; /* 30px */
+    margin-top: 1.875rem; 
 }
 
 .social-links a{
     text-decoration: none;
-    font-size: 1.875rem; /* 30px */
-    margin-right: 0.9375rem; /* 15px */
+    font-size: 1.875rem;
+    margin-right: 0.9375rem; 
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
@@ -443,7 +455,7 @@ body {
 
 .social-links a:hover{
     color: #ff004f;
-    transform: translateY(-0.3125rem); /* -5px */
+    transform: translateY(-0.3125rem); 
 }
 .btn.btn2{
     display: inline-block;
@@ -456,33 +468,36 @@ body {
 
 form input, form textarea{
     width: 100%;
-    padding: 0.9375rem; /* 15px */
-    margin: 0.9375rem 0; /* 15px 0 */
+    padding: 0.9375rem;
+    margin: 0.9375rem 0; 
     border: 0;
     outline: none;
-    border-radius: 0.375rem; /* 6px */
+    border-radius: 0.375rem; 
     background: #262626;
     color: #fff;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem; 
 }
 
 form btn2{
-    padding: 0.875rem 3.8125rem; /* 14px 60px */
-    font-size: 1.125rem; /* 18px */
-    margin-top: 1.25rem; /* 20px */
+    padding: 0.875rem 3.8125rem; 
+    font-size: 1.125rem; 
+    margin-top: 1.25rem; 
     cursor: pointer;
 }
 
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 1.5875rem 0; /* 25px 0 */
+    padding: 1.5875rem 0; 
     background: #262626;
     font-weight: 300;
-    margin-top: 1.25rem; /* 20px */
+    margin-top: 1.25rem;
 }
 
+/*-------------------------------*/
 /*----------------mobile---------*/
+/*-------------------------------*/
+
 nav .fa-solid{
     display: none;
 }
@@ -493,32 +508,32 @@ nav .fa-solid{
     }
     .header-text{
         margin-top: 100%;
-        font-size: 1.000rem; /* 16px */
+        font-size: 1.000rem; 
     }
     .header-text h1{
-        font-size: 2.000rem; /* 32px */
+        font-size: 2.000rem;
     }
     nav .fa-solid{
         display: block;
-        font-size: 1.5875rem; /* 25px */
+        font-size: 1.5875rem; 
     }
     nav ul{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -12.5rem; /* -200px */
-        width: 12.5rem; /* 200px */
+        right: -12.5rem; 
+        width: 12.5rem; 
         height: 100vh;
-        padding-top: 3.125rem; /* 50px */
+        padding-top: 3.125rem; 
         z-index: 2;
         transition: right 0.5s;
     }
     nav ul li{
         display: block;
-        margin: 1.5875rem; /* 25px */
+        margin: 1.5875rem; 
     }
     
-    /* Google Translate mobiilissa */
+    /* Google Translate mobil */
     #google_translate_element {
         margin: 0.625rem 1.5875rem;
     }
@@ -531,27 +546,27 @@ nav .fa-solid{
     
     nav ul .fa-solid{
         position: absolute;
-        top: 1.5875rem; /* 25px */
-        left: 1.5875rem; /* 25px */
+        top: 1.5875rem; 
+        left: 1.5875rem; 
         cursor: pointer;
     }
     .sub-title{
-        font-size: 2.5rem; /* 40px */
+        font-size: 2.5rem; 
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
     
     .project img {
-        height: 40rem; /* esim. 288px */
+        height: 40rem; 
     }
 
-    /* Näytä overlay suurempana ja vieritettävänä */
+    
     .layer {
-        height: 0;             /* piilossa aluksi */
-        overflow: hidden;      /* piilotetaan kaikki ylimenevä */
-        padding: 0;            /* ei paddingia kun piilossa */
-        font-size: 0.85rem;    /* pienemmät fontit mobiiliin */
+        height: 0;             
+        overflow: hidden;      
+        padding: 0;            
+        font-size: 0.85rem;    
        
     }
 
@@ -583,7 +598,6 @@ nav .fa-solid{
         font-size: 0.8rem;
     }
 
-    /* Varmista, että hoverista riippumatta overlay pysyy isona */
     .project:hover .layer {
         height: auto;
         top: 0;
@@ -593,22 +607,24 @@ nav .fa-solid{
     }
 
     .about-col-1{
-        margin-bottom: 1.9375rem; /* 30px */
+        margin-bottom: 1.9375rem; 
     }
     .about-col-2{
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem; 
     }
     .tab-links{
-        font-size: 1.000rem; /* 16px */
-        margin-right: 1.25rem; /* 20px */
+        font-size: 1.000rem; 
+        margin-right: 1.25rem; 
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
     .copyright{
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem; 
     }
 }
+
+
 #msg
 {
     color: #61b752;
