@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Portfolio of Juha Jermalainen, ICT engineering student at Oamk: software development, full-stack web apps, drones and computer vision.">
+    <title>Juha Jermalainen – Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/06e4f2b1fc.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +13,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" class="logo" alt="Juha Jermalainen logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,7 +22,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#" onclick="toggleTranslate(); return false;">Mummolle</a></li>
                 <li><div id="google_translate_element" style="display:none;"></div></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
             </ul>
         
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -41,7 +42,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/juha.png">
+                <img src="images/juha.png" alt="Juha Jermalainen">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -66,6 +67,7 @@
                     <ul class="about-list">
                     <li>Software development & modern technologies</li>
                     <li>Smart home & automation systems</li>
+                    <li>Drones, robotics & computer vision</li>
                     <li>System optimization & usability</li>
                     <li>Continuous learning & self‑development</li>
                     </ul>
@@ -77,17 +79,21 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming languages:</span> C++, JavaScript, python, C, Bash
-                        <li><span>Web & APIs:</span> REST API (Express), JWT‑auth, JSON, nginx, Dockerized LEMP‑stack</li>
-                        <li><span>Database management:</span> MySQL: schema, CRUD, stored procedures, transactions, container‑DB integration</li>
-                        <li><span>DevOps & Git:</span>CI/CD, Dockerfiles, automated deployment, collaborative Git‑workflow</li>
-                        <li><span>Problem-solving:</span>Authentication & state management (PIN, JWT, timeouts), financial logic (limits, withdrawals), data pagination, embedded IO & EEPROM handling.</li>
+                        <li><span>Programming languages:</span> C++, JavaScript, Python, C, Bash, Kotlin</li>
+                        <li><span>Web & APIs:</span> React, Node.js, REST API (Express), JWT‑auth, JSON, nginx</li>
+                        <li><span>Database management:</span> PostgreSQL, MySQL</li>
+                        <li><span>DevOps & Git:</span> CI/CD, Docker, automated deployment, collaborative Git‑workflow</li>
+                        <li><span>Robotics & Computer Vision:</span> OpenCV, YOLO, MAVLink/ArduPilot</li>
+                        <li><span>Problem-solving:</span> Authentication & state management (PIN, JWT, timeouts), financial logic (limits, withdrawals), data pagination, embedded IO & EEPROM handling.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Software developer: </span> ATM System Project (OAMK)</li>
-                        <li><span>Empbedded systems developer:</span> SpedenSpelit V2 (OAMK)</li>
+                        <li><span>Software developer, Robotics & Computer Vision:</span> Laser Drone – Optical Control Link (DefTech North / Noptel Oy, 2026–ongoing)</li>
+                        <li><span>Software developer, Autonomous Systems:</span> Interceptor Drone (OAMK & Oamk Dronelab, summer 2026)</li>
+                        <li><span>Full-stack developer:</span> Movie Database Web App (OAMK, 2026)</li>
+                        <li><span>Backend developer:</span> ATM System Project (OAMK)</li>
+                        <li><span>Embedded systems developer:</span> SpedenSpelit V2 (OAMK, 2025)</li>
                         <li><span>Customer Service Professional:</span> Restaurant Industry (over 20 years)</li>
                         <li><span>Restaurant owner:</span> Rytmikellari</li>
                     </ul>
@@ -145,13 +151,13 @@
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
             <div class="project">              
-                <img src="images/project1.png">
+                <img src="images/project1.png" alt="SpedenSpelit V2 reaction game device">
                 <div class="layer">
                     <div>
                         <h3>Reaction Game – SpedenSpelit V2</h3>
 
                         <p class="intro">
-                            Last autumn, we completed an exciting project in OAMK’s <em>Software Application</em> course:
+                            In autumn 2025, we completed an exciting project in OAMK’s <em>Software Application</em> course:
                             <br><strong>SpedenSpelit V2</strong>, a reaction‑based game built on an Arduino microcontroller.
                         </p>
 
@@ -178,17 +184,17 @@
                         </p>
                     </div>
                     <div class="actions">
-                        <a href="https://github.com/Sahid1981/spedenspelit" aria-label="GitHub repository">
+                        <a href="https://github.com/Sahid1981/spedenspelit" aria-label="GitHub repository" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://drive.google.com/file/d/1BP8mjp6vmrVlAaKURobh-cAQ5VSyjZxa/view?usp=drivesdk" aria-label="Project video">
+                        <a href="https://drive.google.com/file/d/1BP8mjp6vmrVlAaKURobh-cAQ5VSyjZxa/view?usp=drivesdk" aria-label="Project video" target="_blank" rel="noopener">
                         <i class="fa-solid fa-video"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="project">
-                <img src="images/project2.png">
+                <img src="images/project2.png" alt="ATM application login screen">
                 
                 <div class="layer">
                     <div>
@@ -196,30 +202,30 @@
 
                     <p class="intro">
                         This project was a group assignment in OAMK’s <em>Software Application</em> course.  
-                        It involved creating an <strong>ATM simulation</strong> using C++ and the Qt framework.  
-                        The application implemented core ATM functionalities such as account management, 
-                        transaction processing, and a user‑friendly graphical interface.
+                        It involved creating an <strong>ATM system</strong> with a C++/Qt desktop client
+                        and a Node.js/Express REST API backed by a MySQL database.
                     </p>
 
                     <h4>My responsibilities</h4>
                     <ul class="role-list">
-                        <li>Implementing the core logic for withdrawals, deposits, transfers, and balance checks</li>
-                        <li>Building and managing the Qt‑based user interface components</li>
-                        <li>Participating in debugging, testing, and ensuring application stability</li>
+                        <li>Backend development: REST API and CRUD endpoints (Node.js, Express)</li>
+                        <li>MySQL stored procedures for users, accounts and cards</li>
+                        <li>JWT authentication, user/admin roles and bcrypt PIN hashing</li>
+                        <li>Swagger API documentation and CI/CD with GitHub Actions</li>
+                        <li>Qt client integration and Windows/Linux installers</li>
                     </ul>
 
                     <h4>Key features we implemented</h4>
                     <ul class="features-list">
-                        <li>Secure account login and balance display</li>
+                        <li>Secure card login and balance display</li>
                         <li>Transaction history handling</li>
                         <li>Funds transfer and cash withdrawal logic</li>
-                        <li>Qt‑based desktop user interface</li>
+                        <li>Admin tools for card and account management</li>
                     </ul>
 
                     <p class="summary">
-                        This project strengthened my experience with <strong>C++</strong>, 
-                        <strong>UI development</strong>, and <strong>team collaboration</strong>. 
-                        It also gave valuable insight into designing logical systems that mirror real‑world banking operations.
+                        As the most active contributor, this project strengthened my experience with
+                        <strong>backend development</strong>, <strong>databases</strong> and <strong>team collaboration</strong>.
                     </p>
                     </div>
                     <div class="actions">
@@ -233,12 +239,12 @@
                 </div>
                 </div>
             <div class="project">
-                <img src="images/project3.webp">
+                <img src="images/project3.webp" alt="Uunimakkara Tutka app icon">
                 <div class="layer">
                     <div>
                     <h3>Uunimakkara Tutka – Android Application</h3>
 
-                    <p class="intro"> A location-based Android application built with Kotlin whit Ai-assistance that helps find 
+                    <p class="intro"> A location-based Android application built with Kotlin with AI assistance that helps find 
                     restaurants serving Uunimakkara for lunch near you.
                     <br><strong>Uunimakkara Tutka</strong> was developed as a comprehensive learning project to 
                     master Android development and modern software architecture.
@@ -271,9 +277,112 @@
                         <a href="https://github.com/Sahid1981/uunimakkara" aria-label="GitHub repository" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://github.com/Sahid1981/uunimakkara/releases/latest/" aria-label="Project video" target="_blank" rel="noopener">
+                        <a href="https://github.com/Sahid1981/uunimakkara/releases/latest/" aria-label="Apk" target="_blank" rel="noopener">
                         <i class="fa-brands fa-android"></i>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project4.png" alt="Movie database web app">
+                <div class="layer">
+                    <div>
+                    <h3>Movie Database – Full-Stack Web App</h3>
+                    <p class="intro">
+                        A group project in OAMK's web development course: a <strong>full-stack movie app</strong>
+                        built with React, Node.js, PostgreSQL and Docker, using the TMDB API for movie data.
+                    </p>
+                    <h4>My responsibilities</h4>
+                    <ul class="role-list">
+                        <li>Database schema design and Dockerized PostgreSQL</li>
+                        <li>Login / sign-up flow with JWT and React Router</li>
+                        <li>Search filters (genre, year, language) and movie details page</li>
+                        <li>Personalized recommendations using TMDB</li>
+                        <li>UI 2.0 design, mobile layout and WAVE accessibility fixes</li>
+                    </ul>
+                    <h4>Key features we implemented</h4>
+                    <ul class="features-list">
+                        <li>Reviews and star ratings</li>
+                        <li>Favourites with shareable lists</li>
+                        <li>User groups with shared movie picks</li>
+                        <li>REST API with automated tests and CI</li>
+                    </ul>
+                    <p class="summary">
+                        As the most active committer in a team of four, I strengthened my
+                        <strong>React</strong>, <strong>REST API</strong> and <strong>Git teamwork</strong> skills.
+                    </p>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/Oamkprojectsgroup2/Movieproject" aria-label="GitHub repository" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/project5.png" alt="Autonomous interceptor drone">
+                <div class="layer">
+                    <div>
+                    <h3>Interceptor Drone – Autonomous Flight</h3>
+                    <p class="intro">
+                        A summer 2026 project at OAMK in cooperation with <strong>Oamk Dronelab</strong>:
+                        a quadcopter that finds a red balloon with computer vision, flies to it and lands
+                        next to it without pilot input.
+                    </p>
+                    <h4>My responsibilities</h4>
+                    <ul class="role-list">
+                        <li>Flight logic in Python with MAVSDK (offboard control)</li>
+                        <li>Training a YOLO model on a ~20,000-image dataset (TensorRT)</li>
+                        <li>Jetson Orin Nano and ArduCopter integration</li>
+                        <li>Testing in ArduPilot SITL + Gazebo simulation</li>
+                    </ul>
+                    <h4>Key features we implemented</h4>
+                    <ul class="features-list">
+                        <li>SEARCH → SETTLE → TRACK state machine</li>
+                        <li>Pixel-error P-controllers for steering</li>
+                        <li>Annotated flight video recording</li>
+                        <li>Failsafes and safety procedures</li>
+                    </ul>
+                    <p class="summary">
+                        My first step into <strong>robotics</strong> and <strong>machine vision</strong>,
+                        built together with Valtteri Sipilä.
+                    </p>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/Sahid1981/Interceptordrone" aria-label="GitHub repository" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/project6.png" alt="Laser-controlled drone ground station">
+                <div class="layer">
+                    <div>
+                    <h3>Laser Drone – Optical Control Link</h3>
+                    <p class="intro">
+                        An ongoing project in the <strong>DefTech North</strong> program with
+                        <strong>Noptel Oy</strong>: flying a drone over a laser beam instead of a radio link.
+                    </p>
+                    <h4>My responsibilities</h4>
+                    <ul class="role-list">
+                        <li>Ground station software in Python and OpenCV</li>
+                        <li>Beacon tracking on a pan/tilt gimbal (SO-ARM101 prototype)</li>
+                        <li>Gamepad control mapped to MAVLink commands</li>
+                        <li>Hardware integration and building</li>
+                    </ul>
+                    <h4>Key features</h4>
+                    <ul class="features-list">
+                        <li>Blinking LED beacon detection and tracking</li>
+                        <li>Laser safety gate: beam on only while tracking</li>
+                        <li>Link-loss failsafes with RC override</li>
+                        <li>Logging tools for link quality analysis</li>
+                    </ul>
+                    <p class="summary">
+                        Real-world <strong>system integration</strong> with industry partners.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -297,8 +406,8 @@
                 <p><i class="fa-solid fa-paper-plane"></i> juha.jermalainen(at)gmail.com</p>
                 <p><i class="fa-solid fa-tty"></i> +358 44 2882069</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/juhajermalainen/?locale=en_US"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Sahid1981"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/juhajermalainen/?locale=en_US" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sahid1981" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -306,7 +415,7 @@
                 <form name ="submit-to-google-sheet">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" row="6" placeholder="Your Message"></textarea>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Send Message</button>
                 </form>
                 <span id="msg"></span>   
@@ -314,7 +423,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright @ Juha Jermalainen. made with help of https://www.youtube.com/@GreatStackDev</p>
+        <p>© 2026 Juha Jermalainen. Made with help of <a href="https://www.youtube.com/@GreatStackDev" target="_blank" rel="noopener">GreatStack</a></p>
 </div>
 
 </div>
@@ -365,7 +474,15 @@
                 }, 10000)
                 form.reset()
             })
-			.catch(error => console.error('Error!', error.message))
+			.catch(error => {
+                console.error('Error!', error.message)
+                msg.style.color = "#ff004f"
+                msg.innerHTML = "Sending failed. Please email me directly at juha.jermalainen(at)gmail.com"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                    msg.style.color = ""
+                }, 10000)
+            })
 	})
 </script>
 
