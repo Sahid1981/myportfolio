@@ -272,8 +272,7 @@ body {
 
 .expertise-list div:hover{
     background: #ff004f;
-    transform: translateY(-0.625rem); 
-    font-size: 1.000rem; 
+    transform: translateY(-0.625rem) scale(1.05);
 }
 
 /*-------------------------------*/
