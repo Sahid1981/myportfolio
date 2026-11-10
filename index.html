@@ -390,7 +390,7 @@
 
             </div>
         </div>
-        <!--<a href="#" class="btn">View All Projects</a>-->
+        <button id="show-more-btn" class="btn">Show More Projects</button>
     </div>
 </div>
 
@@ -457,6 +457,40 @@
     }
 
 </script>
+
+<script>
+    const projectCards = document.querySelectorAll('.projects-list .project');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    const STEP = 3;
+    let visibleCount = STEP;
+
+    function updateProjects(){
+        projectCards.forEach((card, i) => {
+            card.classList.toggle('hidden', i >= visibleCount);
+        });
+
+        if (projectCards.length <= STEP){
+            showMoreBtn.style.display = 'none';
+        } else if (visibleCount >= projectCards.length){
+            showMoreBtn.textContent = 'Show Less';
+        } else {
+            showMoreBtn.textContent = 'Show More Projects';
+        }
+    }
+
+    showMoreBtn.addEventListener('click', () => {
+        if (visibleCount >= projectCards.length){
+            visibleCount = STEP;
+            document.getElementById('projects').scrollIntoView();
+        } else {
+            visibleCount += STEP;
+        }
+        updateProjects();
+    });
+
+    updateProjects();
+</script>
+
 
 <script>
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbw6bzd0h0tKHj-4Oka8dxJ5Im6mCq-g2fQHt-TxL8YRu24Q4VuzE9KD0V01PT1GrAWu/exec'

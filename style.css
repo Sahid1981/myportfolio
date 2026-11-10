@@ -286,7 +286,7 @@ body {
 }
 .projects-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2.5rem;
     margin-top: 3.125rem; 
 }
@@ -396,9 +396,15 @@ body {
 .project:hover img{
     transform: scale(1.1);
 }
+
 .project:hover .layer{
     height: 35rem; 
 }
+
+.project.hidden{
+    display: none;
+}
+
 
 .btn{
     display: block;
@@ -414,6 +420,12 @@ body {
 }
 .btn:hover{
     background: #ff004f;
+}
+
+button.btn{
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /*-------------------------------*/
@@ -502,7 +514,16 @@ nav .fa-solid{
     display: none;
 }
 
+@media only screen and (max-width: 62rem){
+    .projects-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media only screen and (max-width: 37.5rem){
+    .projects-list{
+        grid-template-columns: 1fr;
+    }
     #header{
         background-image: url();
     }
