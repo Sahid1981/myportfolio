@@ -150,94 +150,110 @@
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
-            <div class="project">              
-                <img src="images/project1.png" alt="SpedenSpelit V2 reaction game device">
+            <div class="project">
+                <img src="images/project6.png" alt="Laser-controlled drone ground station">
                 <div class="layer">
                     <div>
-                        <h3>Reaction Game – SpedenSpelit V2</h3>
+                    <h3>Laser Drone – Optical Control Link</h3>
+                    <p class="intro">
+                        An ongoing project in the <strong>DefTech North</strong> program with
+                        <strong>Noptel Oy</strong>: flying a drone over a laser beam instead of a radio link.
+                    </p>
+                    <h4>My responsibilities</h4>
+                    <ul class="role-list">
+                        <li>Ground station software in Python and OpenCV</li>
+                        <li>Beacon tracking on a pan/tilt gimbal (SO-ARM101 prototype)</li>
+                        <li>Gamepad control mapped to MAVLink commands</li>
+                        <li>Hardware integration and building</li>
+                    </ul>
+                    <h4>Key features</h4>
+                    <ul class="features-list">
+                        <li>Blinking LED beacon detection and tracking</li>
+                        <li>Laser safety gate: beam on only while tracking</li>
+                        <li>Link-loss failsafes with RC override</li>
+                        <li>Logging tools for link quality analysis</li>
+                    </ul>
+                    <p class="summary">
+                        Real-world <strong>system integration</strong> with industry partners.
+                    </p>
+                    </div>
+                </div>
+            </div>
 
-                        <p class="intro">
-                            In autumn 2025, we completed an exciting project in OAMK’s <em>Software Application</em> course:
-                            <br><strong>SpedenSpelit V2</strong>, a reaction‑based game built on an Arduino microcontroller.
-                        </p>
-
-                        <h4>My responsibilities</h4>
-                        <ul class="role-list">
-                            <li>Managing the displays (LCD and 7‑segment)</li>
-                            <li>Creating the initial project plan</li>
-                            <li>Assembling the final device</li>
-                            <li>Designing and 3D‑printing the enclosure in Blender</li>
-                            <li>Refreshing soldering and assembly skills</li>
-                        </ul>
-
-                        <h4>Key features we implemented</h4>
-                        <ul class="features-list">
-                            <li>High Score system stored in EEPROM</li>
-                            <li>Light show effects</li>
-                            <li>Sound effects</li>
-                            <li>Enhanced user feedback and visual cues</li>
-                        </ul>
-
-                        <p class="summary">
-                            This project was a fantastic opportunity to combine theory with practice. It strengthened<br>my
-                            technical skills while improving teamwork and problem‑solving abilities.
-                        </p>
+            <div class="project">
+                <img src="images/project5.png" alt="Autonomous interceptor drone">
+                <div class="layer">
+                    <div>
+                    <h3>Interceptor Drone – Autonomous Flight</h3>
+                    <p class="intro">
+                        A summer 2026 project at OAMK in cooperation with <strong>Oamk Dronelab</strong>:
+                        a quadcopter that finds a red balloon with computer vision, flies to it and lands
+                        next to it without pilot input.
+                    </p>
+                    <h4>My responsibilities</h4>
+                    <ul class="role-list">
+                        <li>Flight logic in Python with MAVSDK (offboard control)</li>
+                        <li>Training a YOLO model on a ~20,000-image dataset (TensorRT)</li>
+                        <li>Jetson Orin Nano and ArduCopter integration</li>
+                        <li>Testing in ArduPilot SITL + Gazebo simulation</li>
+                    </ul>
+                    <h4>Key features we implemented</h4>
+                    <ul class="features-list">
+                        <li>SEARCH → SETTLE → TRACK state machine</li>
+                        <li>Pixel-error P-controllers for steering</li>
+                        <li>Annotated flight video recording</li>
+                        <li>Failsafes and safety procedures</li>
+                    </ul>
+                    <p class="summary">
+                        My first step into <strong>robotics</strong> and <strong>machine vision</strong>,
+                        built together with Valtteri Sipilä.
+                    </p>
                     </div>
                     <div class="actions">
-                        <a href="https://github.com/Sahid1981/spedenspelit" aria-label="GitHub repository" target="_blank" rel="noopener">
+                        <a href="https://github.com/Sahid1981/Interceptordrone" aria-label="GitHub repository" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1BP8mjp6vmrVlAaKURobh-cAQ5VSyjZxa/view?usp=drivesdk" aria-label="Project video" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-video"></i>
                         </a>
                     </div>
                 </div>
             </div>
+
             <div class="project">
-                <img src="images/project2.png" alt="ATM application login screen">
-                
+                <img src="images/project4.png" alt="Movie database web app">
                 <div class="layer">
                     <div>
-                    <h3>ATM Project</h3>
-
+                    <h3>Movie Database – Full-Stack Web App</h3>
                     <p class="intro">
-                        This project was a group assignment in OAMK’s <em>Software Application</em> course.  
-                        It involved creating an <strong>ATM system</strong> with a C++/Qt desktop client
-                        and a Node.js/Express REST API backed by a MySQL database.
+                        A group project in OAMK's web development course: a <strong>full-stack movie app</strong>
+                        built with React, Node.js, PostgreSQL and Docker, using the TMDB API for movie data.
                     </p>
-
                     <h4>My responsibilities</h4>
                     <ul class="role-list">
-                        <li>Backend development: REST API and CRUD endpoints (Node.js, Express)</li>
-                        <li>MySQL stored procedures for users, accounts and cards</li>
-                        <li>JWT authentication, user/admin roles and bcrypt PIN hashing</li>
-                        <li>Swagger API documentation and CI/CD with GitHub Actions</li>
-                        <li>Qt client integration and Windows/Linux installers</li>
+                        <li>Database schema design and Dockerized PostgreSQL</li>
+                        <li>Login / sign-up flow with JWT and React Router</li>
+                        <li>Search filters (genre, year, language) and movie details page</li>
+                        <li>Personalized recommendations using TMDB</li>
+                        <li>UI 2.0 design, mobile layout and WAVE accessibility fixes</li>
                     </ul>
-
                     <h4>Key features we implemented</h4>
                     <ul class="features-list">
-                        <li>Secure card login and balance display</li>
-                        <li>Transaction history handling</li>
-                        <li>Funds transfer and cash withdrawal logic</li>
-                        <li>Admin tools for card and account management</li>
+                        <li>Reviews and star ratings</li>
+                        <li>Favourites with shareable lists</li>
+                        <li>User groups with shared movie picks</li>
+                        <li>REST API with automated tests and CI</li>
                     </ul>
-
                     <p class="summary">
-                        As the most active contributor, this project strengthened my experience with
-                        <strong>backend development</strong>, <strong>databases</strong> and <strong>team collaboration</strong>.
+                        As the most active committer in a team of four, I strengthened my
+                        <strong>React</strong>, <strong>REST API</strong> and <strong>Git teamwork</strong> skills.
                     </p>
                     </div>
                     <div class="actions">
-                        <a href="https://github.com/Sahid1981/NEWPankkiautomaatti" aria-label="GitHub repository" target="_blank" rel="noopener">
+                        <a href="https://github.com/Oamkprojectsgroup2/Movieproject" aria-label="GitHub repository" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=HIWrV-bBajI" aria-label="Project video" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-video"></i>
                         </a>
                     </div>
                 </div>
-                </div>
+            </div>
+
             <div class="project">
                 <img src="images/project3.webp" alt="Uunimakkara Tutka app icon">
                 <div class="layer">
@@ -283,116 +299,102 @@
                     </div>
                 </div>
             </div>
+
             <div class="project">
-                <img src="images/project4.png" alt="Movie database web app">
+                <img src="images/project2.png" alt="ATM application login screen">
+                
                 <div class="layer">
                     <div>
-                    <h3>Movie Database – Full-Stack Web App</h3>
+                    <h3>ATM Project</h3>
+
                     <p class="intro">
-                        A group project in OAMK's web development course: a <strong>full-stack movie app</strong>
-                        built with React, Node.js, PostgreSQL and Docker, using the TMDB API for movie data.
+                        This project was a group assignment in OAMK’s <em>Software Application</em> course.  
+                        It involved creating an <strong>ATM system</strong> with a C++/Qt desktop client
+                        and a Node.js/Express REST API backed by a MySQL database.
                     </p>
+
                     <h4>My responsibilities</h4>
                     <ul class="role-list">
-                        <li>Database schema design and Dockerized PostgreSQL</li>
-                        <li>Login / sign-up flow with JWT and React Router</li>
-                        <li>Search filters (genre, year, language) and movie details page</li>
-                        <li>Personalized recommendations using TMDB</li>
-                        <li>UI 2.0 design, mobile layout and WAVE accessibility fixes</li>
+                        <li>Backend development: REST API and CRUD endpoints (Node.js, Express)</li>
+                        <li>MySQL stored procedures for users, accounts and cards</li>
+                        <li>JWT authentication, user/admin roles and bcrypt PIN hashing</li>
+                        <li>Swagger API documentation and CI/CD with GitHub Actions</li>
+                        <li>Qt client integration and Windows/Linux installers</li>
                     </ul>
+
                     <h4>Key features we implemented</h4>
                     <ul class="features-list">
-                        <li>Reviews and star ratings</li>
-                        <li>Favourites with shareable lists</li>
-                        <li>User groups with shared movie picks</li>
-                        <li>REST API with automated tests and CI</li>
+                        <li>Secure card login and balance display</li>
+                        <li>Transaction history handling</li>
+                        <li>Funds transfer and cash withdrawal logic</li>
+                        <li>Admin tools for card and account management</li>
                     </ul>
+
                     <p class="summary">
-                        As the most active committer in a team of four, I strengthened my
-                        <strong>React</strong>, <strong>REST API</strong> and <strong>Git teamwork</strong> skills.
+                        As the most active contributor, this project strengthened my experience with
+                        <strong>backend development</strong>, <strong>databases</strong> and <strong>team collaboration</strong>.
                     </p>
                     </div>
                     <div class="actions">
-                        <a href="https://github.com/Oamkprojectsgroup2/Movieproject" aria-label="GitHub repository" target="_blank" rel="noopener">
+                        <a href="https://github.com/Sahid1981/NEWPankkiautomaatti" aria-label="GitHub repository" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=HIWrV-bBajI" aria-label="Project video" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-video"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+            <div class="project">              
+                <img src="images/project1.png" alt="SpedenSpelit V2 reaction game device">
+                <div class="layer">
+                    <div>
+                        <h3>Reaction Game – SpedenSpelit V2</h3>
+
+                        <p class="intro">
+                            In autumn 2025, we completed an exciting project in OAMK’s <em>Software Application</em> course:
+                            <br><strong>SpedenSpelit V2</strong>, a reaction‑based game built on an Arduino microcontroller.
+                        </p>
+
+                        <h4>My responsibilities</h4>
+                        <ul class="role-list">
+                            <li>Managing the displays (LCD and 7‑segment)</li>
+                            <li>Creating the initial project plan</li>
+                            <li>Assembling the final device</li>
+                            <li>Designing and 3D‑printing the enclosure in Blender</li>
+                            <li>Refreshing soldering and assembly skills</li>
+                        </ul>
+
+                        <h4>Key features we implemented</h4>
+                        <ul class="features-list">
+                            <li>High Score system stored in EEPROM</li>
+                            <li>Light show effects</li>
+                            <li>Sound effects</li>
+                            <li>Enhanced user feedback and visual cues</li>
+                        </ul>
+
+                        <p class="summary">
+                            This project was a fantastic opportunity to combine theory with practice. It strengthened<br>my
+                            technical skills while improving teamwork and problem‑solving abilities.
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/Sahid1981/spedenspelit" aria-label="GitHub repository" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1BP8mjp6vmrVlAaKURobh-cAQ5VSyjZxa/view?usp=drivesdk" aria-label="Project video" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-video"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="project">
-                <img src="images/project5.png" alt="Autonomous interceptor drone">
-                <div class="layer">
-                    <div>
-                    <h3>Interceptor Drone – Autonomous Flight</h3>
-                    <p class="intro">
-                        A summer 2026 project at OAMK in cooperation with <strong>Oamk Dronelab</strong>:
-                        a quadcopter that finds a red balloon with computer vision, flies to it and lands
-                        next to it without pilot input.
-                    </p>
-                    <h4>My responsibilities</h4>
-                    <ul class="role-list">
-                        <li>Flight logic in Python with MAVSDK (offboard control)</li>
-                        <li>Training a YOLO model on a ~20,000-image dataset (TensorRT)</li>
-                        <li>Jetson Orin Nano and ArduCopter integration</li>
-                        <li>Testing in ArduPilot SITL + Gazebo simulation</li>
-                    </ul>
-                    <h4>Key features we implemented</h4>
-                    <ul class="features-list">
-                        <li>SEARCH → SETTLE → TRACK state machine</li>
-                        <li>Pixel-error P-controllers for steering</li>
-                        <li>Annotated flight video recording</li>
-                        <li>Failsafes and safety procedures</li>
-                    </ul>
-                    <p class="summary">
-                        My first step into <strong>robotics</strong> and <strong>machine vision</strong>,
-                        built together with Valtteri Sipilä.
-                    </p>
-                    </div>
-                    <div class="actions">
-                        <a href="https://github.com/Sahid1981/Interceptordrone" aria-label="GitHub repository" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="images/project6.png" alt="Laser-controlled drone ground station">
-                <div class="layer">
-                    <div>
-                    <h3>Laser Drone – Optical Control Link</h3>
-                    <p class="intro">
-                        An ongoing project in the <strong>DefTech North</strong> program with
-                        <strong>Noptel Oy</strong>: flying a drone over a laser beam instead of a radio link.
-                    </p>
-                    <h4>My responsibilities</h4>
-                    <ul class="role-list">
-                        <li>Ground station software in Python and OpenCV</li>
-                        <li>Beacon tracking on a pan/tilt gimbal (SO-ARM101 prototype)</li>
-                        <li>Gamepad control mapped to MAVLink commands</li>
-                        <li>Hardware integration and building</li>
-                    </ul>
-                    <h4>Key features</h4>
-                    <ul class="features-list">
-                        <li>Blinking LED beacon detection and tracking</li>
-                        <li>Laser safety gate: beam on only while tracking</li>
-                        <li>Link-loss failsafes with RC override</li>
-                        <li>Logging tools for link quality analysis</li>
-                    </ul>
-                    <p class="summary">
-                        Real-world <strong>system integration</strong> with industry partners.
-                    </p>
-                    </div>
-                </div>
-            </div>
-
 
             </div>
-        </div>
         <button id="show-more-btn" class="btn">Show More Projects</button>
+        </div>
     </div>
-</div>
 
 <!------------------->
 <!------Contact------>
